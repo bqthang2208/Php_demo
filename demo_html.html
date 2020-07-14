@@ -1,0 +1,109 @@
+<!-- ctr + / --> 
+<!-- Xây dựng khung -> htm -->
+<!-- Giao diện -> css -->
+<!-- Tương tác -> JS -->
+<!-- 
+Khái niệm html: Hyper Text Markup Language
+Học các thẻ của html
+Xây dựng 1 khung html như sau: 
+
++ Quy trình làm web: HTML-> CSS -> JavaCript -> PHP
+-->
+<!DOCTYPE html>
+<!DOCTYPE html>
+<!-- Thẻ htmt là thẻ cha bao lấy tất cả các thẻ còn lại -->
+<html>
+<!-- Thẻ head dùng mô tả thông tin cho trang vd: tiêu đề , nhúng các link css, js... -->
+	<head>
+		<!-- Thẻ mata là cặp thẻ khuyết
+			charset="utf-8": hỗ trợ kí tự tiếng Việt -->
+		<meta charset="utf-8" />
+		<!-- Thẻ title là thẻ hiện thị tiêu đề trang -->
+		<title>
+			Tiêu đề trang Web	
+		</title>
+	</head>
+<!-- Thẻ body là thẻ chứa tất cả các nội dung sẽ hiển thị ra trình duyệt tới user -->
+	<body>
+		Hello world
+		<!-- Hk htmt là hk cú pháp các thẻ và cách hiển thị các thẻ -->
+		<!-- thẻ h(heading): có các thẻ từ h1->h6 tương đương cỡ chữ giảm dần thừ h1->h6 
+			Thẻ h là thẻ đầy đủ, thường dùng trong SEO web -->
+		<h1>Thẻ h1</h1>	
+		<h2>Thẻ h2</h2>
+		<h3>Thẻ h3</h3>
+		<h4>Thẻ h4</h4>
+		<h5>Thẻ h5</h5>
+		<h6>Thẻ h6</h6>
+		<!-- Thẻ p(Paragraph): đoạn văn, cách nhau 1 đoạn trắng -->
+		<p>Thẻ p1</p>
+		<p>Thẻ p2</p>
+		<!-- Thẻ br(break): thẻ khuyết, xuống dòng -->
+		Đây là ND <br />
+		xuống dòng
+		<!-- Thẻ hr(horizontal): tạo 1 đường kẻ ngang, là thẻ khuyết -->
+		<hr>
+		<!-- Thẻ i(italic),b(bold),u(underline): in nghiêng, in đậm, gạch chân -->
+		<i>In nghiêng</i>
+		<b>In đậm</b>
+		<u>Gạch chân</u>
+		<!-- Thẻ div(thẻ đầy đủ): Dùng để bao lấy các thẻ khác, xây dựng các khối trên trang thường kết hợp với css -->
+		<div>Nội dung thẻ div</div>
+		<div>
+			<h1>Thẻ h1</h1>
+			<b>thẻ b</b>
+			<div></div>
+		</div>
+		<!-- Thẻ span: dùng để định dạng lại text nào đó trong 1 khối vb, luôn kết hợp với css -->
+		<span> nội dung thẻ span </span>
+		<!-- Thẻ meta:thẻ khuyết định nghĩa ra các siêu dữ liệu, khai báo các thẻ meta bên trong <head>  -->
+		<!-- Thẻ img: thẻ khuyết, hiển thị các ảnh trên trang web 
+			 Một số thuocj tính:
+			 + src: đường dẫn tới file ảnh, sử dụng dường dẫn tương đối để nhúng file, xđịnh đường dẫn tương đối : vị trí các file muốn nhúng vào
+			 + title: text hiển thị rê chuột(hover) qua ảnh
+			 + width: chiều dài ảnh
+			 + height: chiều rộng ảnh
+		 -->
+		 <br />
+		 <img src="a.jpg" width="200px" height="100" title="Rê chuột qua" alt="Thuộc tính alt">
+		 <!-- Các thẻ liên quan đến bảng -->
+		 <table border="1" cellspacing="0" cellpadding="8">
+		 	<!-- Thẻ tr(table row): Hàng -->
+		 	<tr>
+		 		<!-- Thẻ th(table heading): cột chứa tiêu đề trong thẻ th bôi đậm và căn giữa -->
+		 		<th>Name</th>
+		 		<th>Age</th>
+		 		<th>Address</th>
+		 	</tr>
+		 	<tr>
+		 		<!-- Thẻ td(table data): cột chứa dữ liệu -->
+		 		<!-- Gộp cột cho thẻ <td> dùng ttinhs colspan, và khi gộp phải đảm bảo cấu trúc của bảng -->
+		 		<td colspan="2">Thắng</td>
+		 		<!-- <td>20</td> -->
+		 		<!-- Gộp hàng sd rowspan -->
+		 		<td rowspan="2">Hưng Yên</td>
+		 	</tr>
+		 		<tr>
+		 		<!-- Thẻ td(table data): cột chứa dữ liệu -->
+		 		<td>Thắng</td>
+		 		<td>20</td>
+		 		<!-- <td>Hưng Yên</td> -->
+		 	</tr>
+		 </table>
+		 <!-- Thẻ ul, ol, li: thẻ đầy đủ dạng danh sách
+			  + ul(under list)
+			  + li: thẻ danh sách không có thứ tự
+			  + ol(orderlist): thẻ danh sách có thứ tự
+		 -->
+		 <ul>
+		 	<li>Thẻ 1</li>
+		 	<li>Thẻ 2</li>
+		 </ul>
+		 <ol>
+		 	<li>Thẻ 1</li>
+		 	<li>Thẻ 2</li>
+		 </ol>
+		 <!-- Thẻ a: thẻ đầy đủ là 1 link -->
+		 <a href="https://google.vn" target="_blank">Click vào thẻ này để chuyển hướng</a>
+	</body>
+</html
